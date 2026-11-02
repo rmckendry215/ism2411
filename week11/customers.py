@@ -22,3 +22,24 @@ customer['tier'] = 'platinum' #updating the value of an existing key
 print(customer)
 del customer['name'] #removing a key-value pair from the dictionary
 print(customer)
+
+print(customer.get('ytd_spend',0))
+
+print("--- Exercise 3 ---")
+print(customer.get('email', 'no email on file'))
+
+# try:
+#     print(customer['email'])
+# except KeyError as error:
+#     print("KeyError caught: ", error)
+
+
+
+
+# Reflection Questions: Answer in 2-3 sentences each.
+
+# In Exercise 3 you saw the difference between .get() and bracket notation. When in real work would you use each one, and what's your rule of thumb for choosing?
+#
+
+# Exercise 8 asked you to build a summary dictionary with a loop. What does this pattern remind you of from Excel, and why might the Python version be more useful for large datasets?
+#
